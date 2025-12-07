@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bible_study_types",
+  "info": {
+    "singularName": "bible-study-type",
+    "pluralName": "bible-study-types",
+    "displayName": "StudyType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "studyType": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

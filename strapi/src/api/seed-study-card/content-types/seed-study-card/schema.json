@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seed_study_cards",
+  "info": {
+    "singularName": "seed-study-card",
+    "pluralName": "seed-study-cards",
+    "displayName": "SeedStudyCard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "sort": {
+      "type": "integer"
+    }
+  }
+}

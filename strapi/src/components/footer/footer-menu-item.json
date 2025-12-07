@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_footer_footer_menu_items",
+  "info": {
+    "displayName": "FooterMenu",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.menu-item"
+    },
+    "menuTitle": {
+      "type": "string"
+    },
+    "isIconMenu": {
+      "type": "boolean"
+    }
+  }
+}

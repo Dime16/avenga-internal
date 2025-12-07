@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_daily_logins",
+  "info": {
+    "singularName": "user-daily-login",
+    "pluralName": "user-daily-logins",
+    "displayName": "UserDailyLogin",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "user_daily_logins"
+    },
+    "date": {
+      "type": "datetime"
+    }
+  }
+}

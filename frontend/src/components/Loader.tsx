@@ -1,0 +1,54 @@
+'use client';
+
+import {useGlobal} from '@/context/Global';
+import {JSX} from "react";
+
+export default function Loader(): JSX.Element | null {
+    const { isLoading } = useGlobal();
+
+    if (!isLoading) return null;
+
+    return (
+        <div className="fixed inset-0 flex justify-center items-center bg-opacity-50 z-50">
+            <span className="loader"></span>
+
+            <style jsx>{`
+                .loader {
+                    width: 48px;
+                    height: 48px;
+                    display: inline-block;
+                    position: relative;
+                }
+
+                .loader::after,
+                .loader::before {
+                    content: '';
+                    box-sizing: border-box;
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    border: 2px solid #000;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    animation: animloader 2s linear infinite;
+                }
+
+                .loader::after {
+                    animation-delay: 1s;
+                }
+
+                @keyframes animloader {
+                    0% {
+                        transform: scale(0);
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: scale(1);
+                        opacity: 0;
+                    }
+                }
+            `}</style>
+        </div>
+    );
+};

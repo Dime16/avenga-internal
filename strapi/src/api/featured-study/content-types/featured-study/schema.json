@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_studies",
+  "info": {
+    "singularName": "featured-study",
+    "pluralName": "featured-studies",
+    "displayName": "FeaturedStudy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "pdf": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "pdfUrl": {
+      "type": "string"
+    },
+    "privateLink": {
+      "type": "boolean"
+    }
+  }
+}

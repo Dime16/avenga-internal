@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "image_and_texts",
+  "info": {
+    "singularName": "image-and-text",
+    "pluralName": "image-and-texts",
+    "displayName": "ImageAndText",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "image",
+        "text",
+        "textAndImage"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "subtitleColor": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "descriptionColor": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "urlColor": {
+      "type": "string"
+    },
+    "urlDescription": {
+      "type": "text"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "bottom"
+      ]
+    },
+    "privateLink": {
+      "type": "boolean"
+    }
+  }
+}

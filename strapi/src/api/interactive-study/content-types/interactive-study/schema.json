@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "interactive_studies",
+  "info": {
+    "singularName": "interactive-study",
+    "pluralName": "interactive-studies",
+    "displayName": "InteractiveStudy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "privateLink": {
+      "type": "boolean"
+    },
+    "actionButtonText": {
+      "type": "string"
+    },
+    "pdfUrl": {
+      "type": "string"
+    }
+  }
+}

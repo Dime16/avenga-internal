@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seed_videos",
+  "info": {
+    "singularName": "seed-video",
+    "pluralName": "seed-videos",
+    "displayName": "SeedVideo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "sort": {
+      "type": "integer"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

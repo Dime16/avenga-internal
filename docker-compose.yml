@@ -1,0 +1,65 @@
+version: "3.9"
+
+services:
+  strapi:
+    build:
+      context: ./strapi
+      dockerfile: Dockerfile
+    container_name: avenga-strapi
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      # Strapi URL that frontend will call
+      # Update this with your Synology IP or domain
+      PUBLIC_URL: "http://YOUR_SYNOLOGY_IP:1337"
+
+      # Strapi Admin URL (optional)
+      # ADMIN_URL is sometimes used for email links etc.
+
+      # Database config - SQLite
+      DATABASE_CLIENT: "sqlite"
+      DATABASE_FILENAME: "/data/data.db"
+
+      # If you have STRAPI_ADMIN_JWT_SECRET, API tokens, etc. add here:
+      # ADMIN_JWT_SECRET: "..."
+      # APP_KEYS: "..."
+      # API_TOKEN_SALT: "..."
+      # TRANSFER_TOKEN_SALT: "..."
+      # JWT_SECRET: "..."
+
+    volumes:
+      # persist uploads and sqlite db outside container
+      - ./uploads:/app/public/uploads
+      - ./strapi-data:/data
+    ports:
+      - "1337:1337"
+    networks:
+      - avenga_net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: avenga-frontend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+
+      # URL the frontend uses to talk to Strapi
+      # This MUST match how Next.js fetchInitialData() calls your backend
+      NEXT_PUBLIC_API_URL: "http://YOUR_SYNOLOGY_IP:1337/api"
+      # If fetchInitialData expects something else (like process.env.API_URL),
+      # then use that env var instead, e.g.:
+      # API_URL: "http://avenga-strapi:1337/api"
+
+    depends_on:
+      - strapi
+    ports:
+      - "3000:3000"
+    networks:
+      - avenga_net
+
+networks:
+  avenga_net:
+    driver: bridge

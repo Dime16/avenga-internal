@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "titleDescription": {
+      "type": "text"
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "connect",
+        "ask",
+        "schedule",
+        "teach",
+        "followUp",
+        "synopsis"
+      ]
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "connect": {
+      "type": "component",
+      "repeatable": false,
+      "component": "video.connect-video"
+    },
+    "coreCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.core-card"
+    },
+    "pageBackgroundColor": {
+      "type": "string"
+    }
+  }
+}

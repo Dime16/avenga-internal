@@ -1,0 +1,53 @@
+{
+  "name": "strapi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "golive": "npm ci && npm run build && npm run start"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.13.0",
+    "@strapi/plugin-users-permissions": "5.13.0",
+    "@strapi/provider-email-amazon-ses": "^5.15.1",
+    "@strapi/provider-email-nodemailer": "^5.13.0",
+    "@strapi/provider-upload-aws-s3": "^5.16.0",
+    "@strapi/strapi": "5.24.1",
+    "@strapi/utils": "^5.18.0",
+    "better-sqlite3": "11.3.0",
+    "leo-profanity": "^1.7.0",
+    "nodemailer": "7.0.11",
+    "pg": "^8.16.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "strapi-plugin-import-export-content": "^0.4.2",
+    "styled-components": "^6.0.0",
+    "validator": "13.15.22"
+  },
+  "devDependencies": {
+    "@types/leo-profanity": "^1.5.4",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/validator": "^13.15.2",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "4ebb420e-09cb-4e70-a7e1-92cbe052f57d",
+    "installId": "ec7cd2ba088eee3c700d1b4d9f29db25c84d40f13b7a4d40f420bff4bb230fd3"
+  }
+}

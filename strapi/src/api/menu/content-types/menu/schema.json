@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "Menu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "menuItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.menu-item"
+    },
+    "confirmation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "modals.confirmation-modal"
+    }
+  }
+}

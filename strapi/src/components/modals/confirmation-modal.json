@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_modals_confirmation_modals",
+  "info": {
+    "displayName": "ConfirmationModal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "confirmation": {
+      "type": "string"
+    },
+    "cancel": {
+      "type": "string"
+    }
+  }
+}

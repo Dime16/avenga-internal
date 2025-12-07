@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stickers",
+  "info": {
+    "singularName": "sticker",
+    "pluralName": "stickers",
+    "displayName": "Stickers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "order": {
+      "type": "integer"
+    },
+    "caption": {
+      "type": "string"
+    }
+  }
+}

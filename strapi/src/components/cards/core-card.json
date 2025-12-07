@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_cards_core_cards",
+  "info": {
+    "displayName": "CoreCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "urlDescription": {
+      "type": "string"
+    }
+  }
+}
