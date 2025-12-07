@@ -1,0 +1,6 @@
+[{"id":1,"name":"5.0.0-rename-identifiers-longer-than-max-length","time":1747747284844},
+{"id":2,"name":"5.0.0-02-created-document-id","time":1747747284853},
+{"id":3,"name":"5.0.0-03-created-locale","time":1747747284861},
+{"id":4,"name":"5.0.0-04-created-published-at","time":1747747284871},
+{"id":5,"name":"5.0.0-05-drop-slug-fields-index","time":1747747284878},
+{"id":6,"name":"core::5.0.0-discard-drafts","time":1747747284886}]

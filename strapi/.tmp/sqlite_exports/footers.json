@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "document_id": "o9mtmshddu27cnwitkv1pi1h",
+    "description": "Lorem ipsum dolor sit amet consectetur. Dictumst adipiscing nullam turpis feugiat vestibulum.",
+    "rights": "© 2024 Winyourworld. All rights reserved.",
+    "terms": "Terms & Conditions | Privacy Policy",
+    "created_at": 1748869800009,
+    "updated_at": 1748886935339,
+    "published_at": null,
+    "created_by_id": 1,
+    "updated_by_id": 1,
+    "locale": null
+  },
+  {
+    "id": 10,
+    "document_id": "o9mtmshddu27cnwitkv1pi1h",
+    "description": "Lorem ipsum dolor sit amet consectetur. Dictumst adipiscing nullam turpis feugiat vestibulum.",
+    "rights": "© 2024 Winyourworld. All rights reserved.",
+    "terms": "Terms & Conditions | Privacy Policy",
+    "created_at": 1748869800009,
+    "updated_at": 1748886935339,
+    "published_at": 1748886935347,
+    "created_by_id": 1,
+    "updated_by_id": 1,
+    "locale": null
+  }
+]

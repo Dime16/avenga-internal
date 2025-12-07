@@ -1,0 +1,2 @@
+[{"id":1,"document_id":"x6bp8fdhfir8c4x4jmyuxoln","name":"Authenticated","description":"Default role given to authenticated user.","type":"authenticated","created_at":1747747286112,"updated_at":1748696340369,"published_at":1747747286112,"created_by_id":null,"updated_by_id":null,"locale":null},
+{"id":2,"document_id":"n0f9e9s5zzfpboi8nvmhwve4","name":"Public","description":"Default role given to unauthenticated user.","type":"public","created_at":1747747286120,"updated_at":1748872084429,"published_at":1747747286121,"created_by_id":null,"updated_by_id":null,"locale":null}]

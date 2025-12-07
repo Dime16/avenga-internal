@@ -1,0 +1,6 @@
+[{"id":1,"entity_id":1,"cmp_id":1,"component_type":"footer.footer-menu-item","field":"FooterMenus","order":1.0},
+{"id":3,"entity_id":1,"cmp_id":3,"component_type":"footer.footer-menu-item","field":"FooterMenus","order":2.0},
+{"id":4,"entity_id":1,"cmp_id":4,"component_type":"footer.footer-menu-item","field":"FooterMenus","order":3.0},
+{"id":58,"entity_id":10,"cmp_id":34,"component_type":"footer.footer-menu-item","field":"FooterMenus","order":1.0},
+{"id":59,"entity_id":10,"cmp_id":35,"component_type":"footer.footer-menu-item","field":"FooterMenus","order":2.0},
+{"id":60,"entity_id":10,"cmp_id":36,"component_type":"footer.footer-menu-item","field":"FooterMenus","order":3.0}]
